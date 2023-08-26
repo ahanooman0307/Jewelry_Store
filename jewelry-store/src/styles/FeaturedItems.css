@@ -1,0 +1,18 @@
+.featured{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+img{
+width: 300px;
+height: 300px;
+object-fit: contain;
+}
+
+.items{
+    background-color: antiquewhite;
+    padding: 50px 50px;
+
+}
