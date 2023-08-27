@@ -15,6 +15,8 @@ const FeaturedItems = () =>{
         console.log(jsonData)
         setFake(jsonData)
     }
+
+    const Jewelry = fake.values;
     // fakestore();
     return(
         <div className="featured">

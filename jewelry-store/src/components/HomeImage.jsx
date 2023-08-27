@@ -1,8 +1,9 @@
 import React from "react";
+import '../styles/Home.css'
 
 const HomeImage = () =>{
     return (
-        <img src="" alt="Home Image" />
+        <img src='../images/store.jpg' alt="Home Image" className="homeImage" />
     )
 }
 

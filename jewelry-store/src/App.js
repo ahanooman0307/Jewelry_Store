@@ -1,7 +1,10 @@
 import logo from './logo.svg';
+import {Routes, Route} from 'react-router-dom'
 import './App.css';
 import Main from './components/Main';
 import React, {useState, useEffect} from 'react';
+import Home from './components/Home';
+import Search from './components/Search';
 
 function App() {
 
@@ -18,12 +21,32 @@ function App() {
     return 0;
   })
 
+  const numberArray = [2,3,4,5,35]
+  const DoubleArray = numberArray.map(numberItem =>{
+    return(
+      <div>{numberItem *2}</div>
+    )
+  })
+  // console.log(DoubleArray)
+
   return (
     <>
-    <Main></Main>
-    <button onClick={decrementCount}>-</button>
+            <Routes>
+              <Route path = '/' element = {<Main />} />
+              <Route path = '/search' element = {<Search />} />
+
+            </Routes>
+
+    {/* <Main></Main>
+    {numberArray.map(numberItem =>{
+    return(
+      <div>{numberItem *5}</div>
+    )
+  })} */}
+    {/* <button onClick={decrementCount}>-</button>
     <span>{count}</span>
-    <button onClick ={incrementCount}>+</button>
+    <button onClick ={incrementCount}>+</button> */}
+
     </>
   );
 }

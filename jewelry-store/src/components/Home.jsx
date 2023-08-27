@@ -2,14 +2,15 @@ import React from "react";
 import Navbar from "./HomeNavbar";
 import HomeImage from "./HomeImage";
 import FeaturedItems from "./FeaturedItems";
+import { Route, Routes } from "react-router-dom";
 
 const Home = () =>{
 return(
-    <div>
+   <>
         <Navbar></Navbar>
         <HomeImage></HomeImage>
         <FeaturedItems></FeaturedItems>
-    </div>
+        </>
 
 )
 }
