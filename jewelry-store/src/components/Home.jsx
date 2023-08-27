@@ -9,7 +9,6 @@ return(
    <>
         <Navbar></Navbar>
         <HomeImage></HomeImage>
-        <FeaturedItems></FeaturedItems>
         </>
 
 )

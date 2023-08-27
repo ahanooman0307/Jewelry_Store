@@ -5,6 +5,7 @@ import Main from './components/Main';
 import React, {useState, useEffect} from 'react';
 import Home from './components/Home';
 import Search from './components/Search';
+import Shop from './components/Shop';
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
     <>
             <Routes>
               <Route path = '/' element = {<Main />} />
+              <Route path = '/shop' element = {<Shop />} />
+
               <Route path = '/search' element = {<Search />} />
 
             </Routes>
