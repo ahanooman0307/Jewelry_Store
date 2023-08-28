@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HomeImage from "./HomeImage";
+import '../styles/FeaturedItems.css'
 import axios from "axios";
 
 const Home = () => {

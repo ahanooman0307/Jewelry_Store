@@ -11,7 +11,6 @@ const Navbar = () =>{
                 </div>
             <div className="left">
                 <Link to='/shop'>Shop</Link>
-                <Link to='/search'>Search</Link>
                 <a href="">Cart</a>
             </div>
         </div>
