@@ -16,7 +16,6 @@ const FeaturedItems = () =>{
         setFake(jsonData)
     }
 
-    const Jewelry = fake.values;
     // fakestore();
     return(
         <div className="featured">
@@ -33,37 +32,7 @@ const FeaturedItems = () =>{
                     </>
                 )
             })}
-            <div className="items">
-                <img src="" alt="chain" className="item" />
-                <div className="description">
-                    <div className="name">Chain</div>
-                    <div className="price">$5.2M</div>
-                </div>
-            </div>
-
-            <div className="items">
-            <img src="" alt="chain" className="item" />
-                <div className="description">
-                    <div className="name">Bracelet</div>
-                    <div className="price">$6</div>
-                </div>
-            </div>
-
-            <div className="items">
-            <img src="" alt="chain" className="item" />
-                <div className="decription">
-                    <div className="name">Anklet</div>
-                    <div className="price">$5200</div>
-                </div>
-            </div>
-
-            <div className="items">
-            <img src="" alt="chain" className="item" />
-                <div className="description">
-                    <div className="name">Ring</div>
-                    <div className="price">$7.2B</div>
-                </div>
-            </div>
+            
         </div>
     )
 }

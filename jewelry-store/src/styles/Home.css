@@ -1,5 +1,28 @@
-.homeImage{
-    padding: 50px 50px;
-    background-color: rgb(122, 74, 15);
-    width: 100vw;
+body{
+    overflow-x: hidden;
 }
+/* .homeimage {
+    position: absolute;
+    top: 0px;
+    background-color: rgb(245, 221, 221);
+    width: 100vw;
+    height: auto;
+    display: block;
+} */
+
+.imageContainer {
+    /* position: absolute;
+    top: 0; */
+    background-image: url('../images/clothesimg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    display: block;
+    z-index: 2;
+  }
+
+
+
+ 

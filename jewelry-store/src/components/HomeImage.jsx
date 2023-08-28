@@ -1,10 +1,16 @@
 import React from "react";
 import '../styles/Home.css'
+import Navbar from "./HomeNavbar";
 
 const HomeImage = () =>{
     return (
-        <img src='../images/store.jpg' alt="Home Image" className="homeImage" />
-    )
+        <>
+        <div className="imageContainer">
+        <Navbar></Navbar>
+        {/* <img src={require('..//images/clothesimg.jpg')} className="homeimage" /> */}
+        </div>
+        </>
+        )
 }
 
 export default HomeImage;
