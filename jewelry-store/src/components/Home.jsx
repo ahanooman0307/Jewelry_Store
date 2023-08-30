@@ -21,6 +21,11 @@ const Home = () => {
   // Define the indices of the items you want to display
   const itemIndices = [2, 3, 18, 14];
 
+  const handleItemClick = (itemId) => {
+    console.log("Clicked on item ID:", itemId);
+  };
+
+
   return (
     <>
       <HomeImage />
@@ -36,6 +41,7 @@ const Home = () => {
                   <div className="description">
                     <div className="name">{item.title}</div>
                     <div className="price">${item.price}</div>
+                    <button onClick={() => handleItemClick(item.id)}>Add to cart</button>
                   </div>
                 </div>
               );

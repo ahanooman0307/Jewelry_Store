@@ -6,6 +6,7 @@ import '../styles/Store.css'
 const Shop = () =>{
     const [search, setSearch] = useState("")
     const [data, setData] = useState([])
+    const [cartitems, setItems] = useState([])
 
     useEffect(()=>{
         axios.get("https://fakestoreapi.com/products")
@@ -17,6 +18,12 @@ const Shop = () =>{
             console.log(error)
         })
     }, [])
+
+    const handleItemClick = (itemId) => {
+        console.log("Clicked on item ID:", itemId);
+      };
+
+      
     return(
         <>
         <Navbar></Navbar>
@@ -36,6 +43,7 @@ const Shop = () =>{
             })
 
             .map((row, index)=>{
+                const item = data[index];
                 return(
                     <div className="card" key = {index}>
                         <div className="image">
@@ -44,6 +52,9 @@ const Shop = () =>{
                         <div className="title">
                             <h2>{row.title.substring(0, 20)}</h2>
                             <p>${row.price}</p>
+                            <button onClick={() => handleItemClick(item.id)}>Add to cart</button>
+                            
+
                         </div>
                     </div>
                 )
